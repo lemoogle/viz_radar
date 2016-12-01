@@ -1,0 +1,103 @@
+<form class="splunk-formatter-section" section-label="General">
+    
+
+</form>
+
+
+<form class="splunk-formatter-section" section-label="Scale">
+      <!-- Add html here to create formatter options -->
+      <div class="control-group">
+
+        <label class="control-label">Show</label>
+        <div class="controls controls-fill">
+
+          <splunk-radio-input name="display.visualizations.custom.viz_radar.radar.scaleDisplay" value="true">
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+          </splunk-radio-input>
+        </div>
+      </div>
+
+      <div class="control-group">
+
+        <label class="control-label">Data</label>
+        <div class="controls controls-fill">
+
+          <splunk-radio-input name="display.visualizations.custom.viz_radar.radar.tooltip_value" value="default">
+              <option value="default">Default</option>
+              <option value="value">Value</option>
+              <option value="ratio">Ratio</option>
+          </splunk-radio-input>
+        </div>
+      </div>
+
+      <div class="control-group">
+
+        <label class="control-label">Scale Line width</label>
+        <div class="controls controls-fill">
+          <splunk-text-input name="display.visualizations.custom.viz_radar.radar.scaleLineWidth"></splunk-text-input>
+        </div>
+      </div>
+      <div class="control-group">
+
+        <label class="control-label">Scale Line color</label>
+        <div class="controls controls-fill">
+          <splunk-color-picker name="display.visualizations.custom.viz_radar.radar.scaleLineColor"></splunk-text-input>
+        </div>
+      </div>
+      
+
+    </form>
+
+
+
+<form class="splunk-formatter-section" section-label="Point">
+      <!-- Add html here to create formatter options -->
+      <div class="control-group">
+
+        <label class="control-label">Show</label>
+        <div class="controls controls-fill">
+
+          <splunk-radio-input name="display.visualizations.custom.viz_radar.radar.pointDisplay" value="true">
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+          </splunk-radio-input>
+        </div>
+      </div>
+
+      <div class="control-group">
+
+        <label class="control-label">Data</label>
+        <div class="controls controls-fill">
+
+          <splunk-select name="display.visualizations.custom.viz_radar.radar.pointStyle" value="circle">
+              <option value="circle">Circle</option>
+              <option value="triangle">Triangle</option>
+			  <option value="rect">Rectangle</option>
+			  <option value="rectRot">Rectangle Rotated</option>
+			  <option value="cross">Cross</option>
+			  <option value="crossRot">Cross Rotated</option>
+			  <option value="star">Star</option>
+			  <option value="line">Line</option>
+			  <option value="dash">Dash</option>
+          </splunk-select>
+        </div>
+      </div>
+
+      <div class="control-group">
+
+        <label class="control-label">Point radius</label>
+        <div class="controls controls-fill">
+          <splunk-text-input name="display.visualizations.custom.viz_radar.radar.pointRadius" value="1"></splunk-text-input>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Hover - Point background color</label>
+        <div class="controls controls-fill">
+          <splunk-color-picker name="display.visualizations.custom.viz_radar.radar.pointHoverBackgroundColor"></splunk-text-input>
+        </div>
+      </div>
+      
+
+    </form>

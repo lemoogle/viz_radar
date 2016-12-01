@@ -1,0 +1,23 @@
+<dashboard>
+  <label>Examples</label>
+    <row>
+    <panel>
+      <title>Radar Chart Examples</title>
+      <viz type="viz_radar.radar">
+        <title>GoT Character attributes</title>
+        <search>
+          <query>| inputlookup radar.csv | table name charisma dexterity intelligence luck strength</query>
+          <earliest></earliest>
+          <latest></latest>
+        </search>
+        <option name="type">viz_radar.radar</option>
+        <option name="data">preview</option>
+        <option name="pagerPosition">bottom</option>
+        <option name="managerid">search1</option>
+        <option name="id">view_12232</option>
+        <option name="drilldownRedirect">true</option>
+        <option name="resizable">true</option>
+      </viz>
+    </panel>
+  </row>
+</dashboard>
